@@ -1,7 +1,12 @@
 angular.module('video-player', [])
 .controller('ctrl', function($scope) {
   $scope.exampleVideoData = window.exampleVideoData;
-  $scope.onClick = function () {};
+  $scope.currentVideo = window.exampleVideoData[0];
+  $scope.onClick = function (video) {
+    console.log('clicked! Video : ', video);
+    $scope.currentVideo = video;
+    console.log($scope);
+  };
 
 })
 .directive('app', function() {
