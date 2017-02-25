@@ -4,11 +4,13 @@ angular.module('video-player')
     scope: {
       videoTitle: '@',
       videoDesc: '@',
-      videoThumbnail: '@'
+      videoThumbnail: '@',
+      click: '<'
     },
+    controllerAs: 'ctrl',
+    bindToController: true,
     controller: function($scope) {
      
-      console.log('video List Entry', $scope);
     },
     templateUrl: 'src/templates/videoListEntry.html'
   };

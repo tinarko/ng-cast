@@ -1,9 +1,12 @@
 <li class="video-list-entry media">
   <div class="media-left">
-    <img class="media-object" src={{videoThumbnail}} />
+    <img class="media-object" src={{ctrl.videoThumbnail}} />
   </div>
   <div class="media-body">
-    <div class="video-list-entry-title">{{videoTitle}}</div>
-    <div class="video-list-entry-detail">{{videoDesc}}</div>
+    <div class="video-list-entry-title" 
+      click="click">
+        {{ctrl.videoTitle}}
+    </div>
+    <div class="video-list-entry-detail">{{ctrl.videoDesc}}</div>
   </div>
 </li>
