@@ -1,6 +1,13 @@
 angular.module('video-player')
 .directive('videoList', function() {
   return {
-    // TODO
+    scope: {
+      videos: '<'
+    },
+    controller: function($scope) {
+     
+      console.log('video List', $scope);
+    },
+    templateUrl: 'src/templates/videoList.html'
   };
 });

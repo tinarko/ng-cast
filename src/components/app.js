@@ -1,22 +1,15 @@
 angular.module('video-player', [])
-
+.controller('Ctrl', function($scope) {
+  $scope.exampleVideoData = window.exampleVideoData;
+})
 .directive('app', function() {
   return {
-    template: '<div id="app container"> \
-                <nav class="navbar"> \
-                  <div class="col-md-6 col-md-offset-3"> \
-                    <search><h5><em>search</em> component goes here</h5></search> \
-                  </div> \
-                </nav> \
-                <div class="row"> \
-                  <div class="col-md-7"> \
-                    <video-player><h5><em>videoPlayer</em> component goes here</h5></video-player> \
-                  </div> \
-                  <div class="col-md-5"> \
-                    <video-list><h5><em>videoList</em> component goes here</h5></video-list> \
-                  </div> \
-                  <div> \
-                </div>'
+
+    controller: function($scope) {
+      $scope.exampleVideoData = window.exampleVideoData;
+      console.log($scope);
+    },
+    templateUrl: 'src/templates/app.html'
 
   };
 });
