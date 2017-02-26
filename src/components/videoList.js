@@ -3,7 +3,7 @@ angular.module('video-player')
   return {
     scope: {
       videos: '<',
-      click: '<'
+      onClick: '<'
     },
     controllerAs: 'ctrl',
     bindToController: true,

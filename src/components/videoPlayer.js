@@ -3,7 +3,7 @@ angular.module('video-player')
 .directive('videoPlayer', function() {
   return {
     scope: {
-      cVideo: '<'
+      video: '<'
     },
     controllerAs: 'ctrl',
     bindToController: true,
