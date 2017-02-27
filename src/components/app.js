@@ -9,7 +9,7 @@ angular.module('video-player')
     this.currentVideo = video;
   };
   this.searchResults = (videos) => {
-    this.videos = videos
+    this.videos = videos;
     this.currentVideo = videos[0];
   };
   youTube.search('javascript tutorial', this.searchResults);
